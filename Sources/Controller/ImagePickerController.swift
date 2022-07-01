@@ -149,8 +149,8 @@ import Photos
     }
     
     func updatedDoneButton() {
-        doneButton.title = assetStore.count > 0 ? doneButtonTitle + " (\(assetStore.count))" : doneButtonTitle
-      
+        doneButton.title = assetStore.count > 0 ? doneButtonTitle + " (\(assetStore.count)/\(settings.selection.max))" : doneButtonTitle
+        
         doneButton.isEnabled = assetStore.count >= settings.selection.min
     }
 
